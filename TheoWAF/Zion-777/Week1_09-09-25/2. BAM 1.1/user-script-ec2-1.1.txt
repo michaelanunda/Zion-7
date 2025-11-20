@@ -1,0 +1,39 @@
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+
+# Remove the default Apache welcome page
+rm -f /etc/httpd/conf.d/welcome.conf
+
+# Get IMDSv2 token
+TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" \
+  -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
+
+# Collect metadata
+local_ipv4=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/local-ipv4)
+az=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/placement/availability-zone)
+macid=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/network/interfaces/macs/)
+vpc=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/network/interfaces/macs/${macid}/vpc-id)
+
+# Write custom HTML to Apache root
+cat <<EOF > /var/www/html/index.html
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+<title>Paraguay</title>
+</head>
+<body>
+<div>
+<h1>Next Stop</h1>
+<br>
+<img src="https://bunny-wp-pullzone-nfqzsydbnl.b-cdn.net/wp-content/uploads/2023/08/asunsion-paraguay-baskenti-ve-sehirleri.jpg" alt="Paraguay">
+<br>
+<p><b>"I, Michael Anunda, Thank Theo And Jacques D Payne, For Teaching Me About Ec2s In Aws. One Step Closer To Escaping Keisha! "With This Class, I Will Net $1,112,000.00 Per Year!"</b></p>
+</div>
+</body>
+</html>
+EOF
+
+systemctl restart httpd
