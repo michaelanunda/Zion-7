@@ -1,0 +1,89 @@
+1. top explained
+-----------------------
+ top
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the first line (Uptime and load averages) of the terminal output after the Linux command, top, is executed within a Linux system: top - 19:38:28 up 2 days, 20:47, 0 users, load average: 0.52, 0.58, 0.59
+
+ who
+ w
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the second line (Task summary) of the terminal output after the Linux command, top, is executed within a Linux system: Tasks: 6 total, 1 running, 5 sleeping, 0 stopped, 0 zombie
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the zombie task(s) (which is under the second line (Task summary) of the terminal output after the execution of the Linux command, top) waiting for exit(): Tasks: 6 total, 1 running, 5 sleeping, 0 stopped, 0 zombie       In addition: Provide a detailed explanation of impact on the zombie task(s) when the following happens: 1. parent process deteriorate and 2. Linux admin user killing the zombie task(s) by killing the parent process
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the total task(s) (which is under the second line (Task summary) of the terminal output after the execution of the Linux command, top) not representing all processes (e.g., idle processes): Tasks: 6 total, 1 running, 5 sleeping, 0 stopped, 0 zombie
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the third line (CPU usage breakdown) of the terminal output after the Linux command, top, is executed within a Linux system: %Cpu(s): 13.9 us, 9.5 sy, 0.0 ni, 76.3 id, 0.0 wa, 0.4 hi, 0.0 si, 0.0 st
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the ni (Nice User-Time) field under the third line (CPU usage breakdown) of the terminal output after executing the Linux command top: %Cpu(s): 13.9 us, 9.5 sy, 0.0 ni, 76.3 id, 0.0 wa, 0.4 hi, 0.0 si, 0.0 st       Include an explanation of how the nice command adjusts process scheduling priority (range from -20 highest to +19 lowest priority, with 0 as default), and clarify what the ni percentage specifically measures (CPU time spent on user processes with non-zero nice values).
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the fourth line (Memory usage breakdown) of the terminal output after the Linux command, top, is executed within a Linux system: MiB Mem: 16217.5 total, 6184.9 free, 9808.7 used, 224.0 buff/cache
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the fifth line (Swap usage breakdown) of the terminal output after the Linux command, top, is executed within a Linux system: MiB Swap: 49152.0 total, 48436.2 free, 715.8 used, 6278.3 avail Mem
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the following fields within the per‑process section after the Linux command, top, is executed within a Linux system: 1. PID, 2. USER, 3. PR, 4. NI, 5. VIRT, 6. RES, 7. SHR, 8. S, 9. %CPU, 10. %MEM, 11. TIME+, and 12. COMMAND
+
+
+https://chatgpt.com/c/693b1f24-d5a4-832c-9f27-ad97455bbad3
+
+2. Modify default view
+-----------------------
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the following displays (toggled via pressing 1 on my keyboard) for the third line (CPU usage breakdown) of the terminal output after the Linux command, top, is executed within a Linux system: %Cpu(s): 13.9 us, 9.5 sy, 0.0 ni, 76.3 id, 0.0 wa, 0.4 hi, 0.0 si, 0.0 st.      1. A single, aggregate CPU usage line AND 2. Multiple per‑CPU (per-core) usage lines
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of how pressing the t keystroke on my keyboard impacts the display of the terminal output for the Linux command, top, within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of how using the t keystroke along with the m keystroke independently impacts the display of the terminal output for the Linux command, top, within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the CPU usage per the per‑process section (via the Linux command, top) being the standard view within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of how pressing the M keystroke in the interactive top command affects the per‑process section by sorting processes based on their memory usage (%MEM) within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of how pressing the N keystroke in the interactive top command affects the per‑process section by sorting processes based on their PID (process ID) within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of how pressing the T keystroke in the interactive top command affects the per‑process section by sorting processes based on their accumulated CPU running time (TIME+) within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the per‑process section (via the Linux command, top) being set back to its standard CPU usage view within a Linux system via the following keystroke: 1. P
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of pressing the 'H' key in the interactive Linux top command in order to switch the display to threads and then pressing it again to toggle back to processes (tasks). Note, all of this is taking place within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of pressing the 'c' key in the interactive Linux top command to toggle the COMMAND field between displaying just the program name (e.g., sshd or java) and the full command line (including arguments) for each process—and vice versa—on a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of pressing the 'c' key in the interactive Linux top command to toggle the COMMAND field between displaying just the program name (e.g., sshd or java) and the full command line (including arguments) for each process on a Linux system, and separately describe the independent effects of the 'v', 'V', and 'H' keys on the overall display within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of pressing the 'n' key in the interactive Linux top command in order to limit the number of shown processes/threads within the per‑process/per-thread section within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of pressing the 'n' key in the interactive Linux top command to prompt for a positive integer that limits the number of shown processes/threads within the per-process/per-thread section (e.g., entering 10 displays only the top 10 by CPU usage), and what happens when entering 0 (typically rejected or ignored, reverting to the full default list) within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of pressing the 'n' key in the interactive Linux top command to enter a prompt for limiting the number of shown processes/threads within the per-process/per-thread section, and then pressing the ESC key to cancel and exit the prompt without applying any change, within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of pressing the 'u' key in the interactive Linux top command in order to list the running processes of an individual user within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of pressing the 'o' or 'O' keys in the interactive Linux top command to add or remove filters that display only matching processes/threads based on criteria (e.g., COMMAND=java or %CPU>10.0) within the per-process/per-thread section on a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the case-sensitive difference between pressing the 'o' key (to add a filter expression restricting the display to matching processes/threads) and the 'O' key (to remove an active filter by its number) in the interactive Linux top command within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of how pressing the 's' key in the interactive Linux top command allows you to change the update/refresh interval of the top display within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the update/refresh interval of the top display (rendered via the interactive Linux top command) within a Linux system being 3 seconds by default
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of how pressing the 'k' key in the interactive Linux top command allows you to kill a process/thread within a Linux system
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of how pressing the 'W' key in the interactive Linux top command allows you to save the changes made to the Linux system's toprc file or .toprc file
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the similarities, differences, pros, and cons of the following Linux top configuration files within a Linux system: 1. ~/.toprc (user-specific) and 2. /etc/toprc (system-wide)
+
+ cat ~/.config/procps/toprc
+
+ man top
+
+https://chatgpt.com/c/693b1f24-d5a4-832c-9f27-ad97455bbad3
+
+3. Start with non default settings
+----------------------------------
+ top -o %MEM
+ top -c
+ top -u root
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of how pressing the 'q' key in the interactive Linux top command allows you to exit the session within a Linux system
+
+https://chatgpt.com/c/693b1f24-d5a4-832c-9f27-ad97455bbad3

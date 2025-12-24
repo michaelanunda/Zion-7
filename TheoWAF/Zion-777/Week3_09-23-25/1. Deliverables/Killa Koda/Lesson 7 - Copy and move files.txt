@@ -1,0 +1,51 @@
+1. Copy files
+-----------------------
+ tree sourcedir
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the recursive nature of the following Linux command: 1. tree sourcedir
+
+ cp [OPTIONS] SOURCE DESTINATION
+ cp one ../targetdir
+ cp one ../targetdir/another-one
+ cp [OPTIONS] SOURCE_FILE1 SOURCE_FILE2 ... DESTINATION_DIRECTORY
+ cp two01 two02 ../targetdir
+ man 7 glob
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the following wildcard within the shell of a Linux system: 1. ?
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the following wildcard within the shell of a Linux system: 1. * START HERE
+
+ ls -l three*
+ ls -l three* | wc -l
+ cp three0? ../targetdir
+ ls -l ../targetdir/three*
+ ls -l ../targetdir/three* | wc -l
+
+ cp -R sourcedir anotherdir
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the behavior of the following Linux command when the directory (anotherdir) doesn't exist versus when it does exist: 1. cp -R sourcedir anotherdir
+
+ ls -l testdir/*
+
+https://chatgpt.com/c/693257c7-c018-8329-a1ab-1512bbf2da19
+
+2. Move files
+-----------------------
+ mv sourcedir/one movedfiles/
+
+ mv anotherdir/one movedfiles/another-one
+
+ mv sourcedir/two01 sourcedir/two02 movedfiles/
+
+ mv anotherdir/ newdir/
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of how the directory structure of movedfiles/ will look like after the execution of the following Linux command: 1. mv newdir/ movedfiles/   NOTE: Prior to the execution of the Linux command mv newdir/ movedfiles/, the directory anotherdir/ was moved into newdir/ via the following Linux command: 1. mv anotherdir/ newdir/
+
+https://chatgpt.com/c/693859f1-0db4-8325-af9b-7ac65b70ff40
+
+3. More possibilities
+-----------------------
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of how the following Linux command can be leveraged to copy the content from the file .profile to the file newfilewithcontent.txt: 1. cat .profile > newfilewithcontent.txt   NOTE: The file newfilewithcontent.txt doesn't exist prior to the execution of the Linux command cat .profile > newfilewithcontent.txt
+
+ diff .profile newfilewithcontent.txt
+
+https://chatgpt.com/c/693859f1-0db4-8325-af9b-7ac65b70ff40

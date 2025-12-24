@@ -1,0 +1,64 @@
+1. Create directories
+-----------------------
+ mkdir myfirstdirectory
+ mkdir testdir{1..10}
+ mkdir mydirectory anotherdirectory thirddirectory
+ mkdir -p parentdir/childdir{01..100}
+ (AI PROMPT THIS) - Explain how Linux goes about formatting the directory layout of the following Linux command: 1. mkdir -p parentdir/childdir{01..100}
+
+https://chatgpt.com/c/68fc228e-2b1c-832a-a24c-9668be4c8d95
+
+2. Move between directories
+---------------------------
+ cd parentdir
+ pwd
+ cd ..
+ cd parentdir/childdir023
+ (AI PROMPT THIS) - Explain the role of the / separator when it comes to navigating through directories within a filesystem on Linux
+ cd ../..
+
+https://chatgpt.com/c/68fee184-e550-832a-b7fb-f8b1f710f6c6
+
+3. Move between directories part 2
+----------------------------------
+ (AI PROMPT THIS) - Within a Linux filesystem you are in the /root directory. The following Linux commands are executed in this order: 1. mkdir root, 2. cd root, 3. pwd, 4. cd .., 5. cd /root, and 6. pwd. What is the difference between the terminal output of the Linux commands pwd in step 3 and step 6. In addition, what is the cause of this difference?
+ (AI PROMPT THIS) - Explain the very top-level root directory (/) within a Linux filesystem
+ (AI PROMPT THIS) - Explain how every file, folder, device, configuration, user data, etc, within a Linux system is stored within the very top-level root directory (/)
+ (AI PROMPT THIS) - Explain the root user's home directory (/root) within a Linux filesystem
+ (AI PROMPT THIS) - Explain how the following Linux command is leveraging an absolute path when it comes to changing the directory from /home/user2/dir1 to /var/log/nginx: 1. cd /var/log/nginx
+ (AI PROMPT THIS) - Explain how the following Linux command is leveraging a relative path when it comes to changing the directory from /home/user2/dir1 to /var/log/nginx: 1. cd ../../../var/log/nginx
+ (AI PROMPT THIS) - Explain the similarities, differences, pros, and cons of using a relative path versus an absolute path when accessing directories within a Linux filesystem
+ (AI PROMPT THIS) - Explain the root user within a Linux filesystem
+ (AI PROMPT THIS) - Explain the root user being under the directory /root while other users have their respective directory under /home (all within a Linux filesystem)
+ (AI PROMPT THIS) - Explain the similarities, differences, pros, and cons of accessing the directory for the root user (/root) using the following Linux commands: 1. cd /root and 2. cd root
+
+https://chatgpt.com/c/690b8f93-6e9c-832e-a664-aef8da9282c6
+
+4. Come back home!
+------------------
+ cd $HOME
+ echo $HOME
+ cd ~
+ cd
+ (AI PROMPT THIS) - Explain the overall efficiency of changing the current working directory in a Linux filesystem, /var/log, to the $HOME directory, /root, via the following group of Linux commands listed under scenarios 1 thru 4
+ (AI PROMPT THIS) - Explain the similarities, differences, pros, and cons of the following Linux commands: 1. cd $HOME, 2. echo $HOME, 3. cd ~, and 4. cd
+
+https://chatgpt.com/c/691105ea-d640-832d-bcd9-2044663fa784
+
+5. Delete directories
+---------------------
+ rmdir root
+ rmdir testdir{1..10}
+ rmdir parentdir
+ rmdir -p parentdir
+ rmdir parentdir/*
+ rmdir -p parentdir/childdir
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the following Linux commands throwing an error in the terminal, for a Linux filesystem, due to the child directory of parentdir, childdir, containing contents: 1. rmdir parentdir, 2. rmdir -p parentdir, 3. rmdir parentdir/*, and 4. rmdir -p parentdir/childdir
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of every entity within a Linux filesystem being a file
+ rm parentdir.txt
+ (AI PROMOT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of why the following Linux command will throw an error: 1. rm parentdir
+ rm -rf parentdir
+ rm -rf /
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the similarities, differences, pros, and cons of the following Linux commands: 1. rm parentdir.txt, 2. rm -rf parentdir, and 3. rm -rf /
+ 
+https://chatgpt.com/c/6912ba71-eda8-832b-9f61-5ea9f6b7f89f

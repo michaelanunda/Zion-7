@@ -1,0 +1,53 @@
+1. Work with aliases
+-----------------------
+ history
+ 
+ alias ll='ls -al'
+ alias lh='ls -alh'
+ alias
+ unalias ll
+ unalias lh
+ 
+ (AI PROMPT THIS) - In the context of Linux shell configuration, provide a detailed explanation of the scope of an alias (e.g., alias ll='ls -al', alias lh='ls -alh')
+
+ (AI PROMPT THIS) - In the context of Linux shell usage for a DevOps engineer handling verbose commands, provide a detailed explanation of the similarities, differences, pros, and cons of the following Linux commands: 1. history and 2. alias
+
+https://chatgpt.com/c/694b0ce2-79dc-832d-b879-df22613da776
+
+2. Make aliases permanent
+-------------------------
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the following file that resides within a Linux system: 1. ~/.bashrc
+
+ grep "alias " .bashrc
+ echo "alias lh='ls -alh'" >> .bashrc
+ source ./.bashrc
+ 
+ (AI PROMPT THIS) - In the context of Linux shell scripting and configuration on enterprise systems, provide a detailed explanation of the source command (also known as the . builtin)
+
+ (AI PROMPT THIS) - In the context of Linux Bash shell configuration, provide a detailed explanation of the ~/.bash_aliases file, including its purpose, creation, usage, and relation to ~/.bashrc
+
+ (AI PROMPT THIS) - In the context of Linux Bash shell configuration, provide a detailed explanation of the following code block commonly found in the ~/.bashrc file:
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+ echo "alias lh1='ls -alh'" >> .bash_aliases
+
+https://chatgpt.com/c/694b0ce2-79dc-832d-b879-df22613da776
+
+3. Configure aliases for all users
+----------------------------------
+ (AI PROMPT THIS) - In the context of Linux system administration for global shell configuration, provide a detailed explanation of adding system-wide aliases for all users by creating scripts in the /etc/profile.d/ directory, including best practices, permissions, and shell compatibility
+
+ (AI PROMPT THIS) - In the context of Linux system-wide shell configuration, provide a detailed explanation of how /etc/profile.d/ interacts with /etc/profile, including the sourcing mechanism, best practices for adding scripts, and shell compatibility considerations
+
+ echo "alias lh2='ls -alh'" >> /etc/profile.d/99-aliases.sh
+ sudo -i
+
+https://chatgpt.com/c/694b0ce2-79dc-832d-b879-df22613da776

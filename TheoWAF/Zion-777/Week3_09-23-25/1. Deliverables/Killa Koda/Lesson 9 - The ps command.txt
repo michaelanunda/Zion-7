@@ -1,0 +1,48 @@
+1. First look
+-------------
+ ps
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the following output fields that are associated with the Linux command ps: 1. PID, 2. TTY, 3. TIME, and 4. CMD
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of why plain ps (without flags) shows only processes associated with the current terminal session and excludes all others (e.g., background daemons, other users' processes, kernel threads) within a Linux system
+
+ ps a
+
+ ps -a
+
+ ps T
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the similarities, differences, pros, and cons of the following Linux commands: 1. ps a and 2. ps -a
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of why the Linux command ps can accept arguments with and without a dash (e.g., ps a, ps -a, ps T)
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the following output field that is associated with the Linux command ps T: 1. STAT
+
+ (AI PROMPT THIS) - In the context of Linux process monitoring within an enterprise environment (often relevant to SDLC for debugging deployments and CI/CD pipelines), provide a detailed explanation of the primary process state codes associated with the STAT field in the output of the Linux command ps T (which displays threads): 1. D (uninterruptible sleep), 2. I (idle kernel thread), 3. R (running/runnable), 4. S (interruptible sleep), 5. T (stopped), 6. t (traced/stopped thread), 7. X (dead), 8. Z (zombie)
+
+ (AI PROMPT THIS) - In the context of Linux process monitoring within an enterprise environment (often relevant to SDLC for debugging deployments and CI/CD pipelines), provide a detailed explanation of the modifier flags associated with the STAT field in the output of the Linux command ps T (which displays threads): 1. <, 2. N, 3. s, 4. l, 5. +
+
+ ps -A
+
+https://chatgpt.com/c/6944cf14-a9c0-832e-8145-4345a99518ca
+https://www.howtogeek.com/428174/what-is-a-tty-on-linux-and-how-to-use-the-tty-command/
+
+2. Example
+----------
+ ps -ef
+ ps aux
+ ps aux --forest
+ pstree
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the similarities, differences, pros, and cons of the following Linux commands: 1. ps aux --forrest and 2. pstree
+
+ ps -f -u syslog
+ ps -f -C cron
+ ps -f -p 1
+ ps -f --ppid 1
+ ps -f -p 2543,8843,3456
+ man ps
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the pros and cons of using the Linux command grep with the Linux command ps versus using the built in flags of ps in order to do enhanced filtering (e.g., ps -f -u syslog, ps -f -C cron, ps -f -p 1, ps -f --ppid 1, and ps -f -p 2543,8843,3456)
+
+https://chatgpt.com/c/6944cf14-a9c0-832e-8145-4345a99518ca

@@ -1,0 +1,65 @@
+1. cat and vim
+-----------------------
+ ls -l testfile
+ file testfile
+ cat testfile
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the cat command in Linux coming from the word concatenate as well as an example of the cat command joining multiple files within a Linux system
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of why it is not a best practice to execute the following Linux command in the event "testfile" is a binary file. In contrast, why is it a best practice to execute the following Linux command in the event "testfile" is a text file: 1. cat testfile
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of Vi within a Linux system
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of Vim within a Linux system
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of Vi, Vim, or both being available within most modern Linux distributions
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the following commands when it comes to saving and/or quitting Vim: 1. :q, 2. :q!, 3. :wq, and 4. :w
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the following modes within Vim: 1. INSERT mode, 2. COMMAND mode, 3. VISUAL mode, and 4. NORMAL mode
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of Vim initially going into Normal mode after the execution of the following Linux command: 1. vim testfile
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of Vim's 'readonly' option, including how it is enabled (via vim -R, view, or :set readonly), its effects on editing and saving (e.g., requiring :w! to override), visual indicators (e.g., "[readonly]" in status), and how to disable it (e.g., :set noreadonly)
+
+ view testfile
+
+https://chatgpt.com/c/692f29f8-c0d4-8328-b9bd-31e6176a18de
+
+2. Less is more or more is less?
+--------------------------------
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the downsides of the cat command when it's executed within a Linux system
+
+ more testfile
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the downsides of the more command when it's executed within a Linux system
+
+ less testfile
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the downsides of the less command when it's executed within a Linux system
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of using / in the following way in order to search for the string, Resolution, within testfile after executing either the Linux command more textfile or less textfile: 1. /Resolution
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the similarities, differences, pros, and cons of the following Linux commands: 1. cat testfile, 2. more testfile, and 3. less testfile
+
+ cat testfile | more
+ cat testfile | less
+
+https://chatgpt.com/c/6930966c-77e4-832b-b8e2-064520846071
+
+3. Tail and head
+-----------------------
+ head testfile
+
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the default number of lines shown in the stdout of the following Linux command: 1. head testfile
+
+ head -n 2 testfile
+ 
+ head -n 22 testfile
+
+ tail testfile
+ 
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the default number of lines shown in the stdout of the following Linux command: 1. tail testfile
+ 
+ tail -n 2 testfile
+ 
+ tail -n 22 testfile
+
+ cat testfile | tail -n 1
+ 
+ cat testfile | head
+ 
+ cat testfile | head -n 4 | tail -n 2
+
+https://chatgpt.com/c/693109f6-3934-8325-a94c-ad14c4b3c294

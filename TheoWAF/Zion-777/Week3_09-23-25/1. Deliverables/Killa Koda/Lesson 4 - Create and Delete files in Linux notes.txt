@@ -1,0 +1,29 @@
+1. Create File
+---------------
+ touch testfile
+ touch my{01..100}file
+ ls my*file
+ ls try?
+ mkdir testdir; touch testdir/mytest{01..1000} testdir/file{01..1000}
+
+https://chatgpt.com/c/6914f97f-6aac-8325-a172-58ba51f30502
+
+2. Delete File
+--------------
+ rm try01
+ rm try1 try2
+ rm testdir/mytest{01..1000}
+ rm -rf testdir
+
+https://chatgpt.com/c/69163ad9-9470-832b-814a-9184419e0e40
+
+3. Create file with vim
+-----------------------
+ vim mynewfile
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of Vim within a Linux system
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of insert mode (via the i key) within Vim
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of command/normal mode within Vim (inside of a Linux system)
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of using the esc key in order to switch from insert mode to command/normal mode within Vim (inside of a Linux system)
+ (AI PROMPT THIS) - In the context of the SDLC within an enterprise environment, provide a detailed explanation of the following command being executed within command/normal mode within Vim (with Vim being inside of a Linux system): 1. :wq
+
+https://chatgpt.com/c/691f6ab4-2fd8-8329-a31b-ae33cc981cbe

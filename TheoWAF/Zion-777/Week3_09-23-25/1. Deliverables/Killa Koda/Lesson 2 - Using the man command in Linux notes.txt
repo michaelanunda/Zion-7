@@ -1,0 +1,26 @@
+1. First look on ls command
+---------------------------
+ man man
+ man ls
+
+https://chatgpt.com/c/68f9986a-c138-832e-a336-f64f2752720f
+
+2. Get more information 
+-----------------------
+ man -f ls
+ man -f intro
+ man 1 intro
+ man 8 intro
+ (AI PROMPT THIS) - Explain the interaction and terminal output of the following Linux commands: 1. man intro, 2. man 1 intro, and 3. man 8 intro
+
+https://chatgpt.com/c/68fa616f-07ec-8320-a50b-29f52ff13049
+
+3. List all files
+-----------------
+ whatis ls
+ man -f ls
+ (AI PROMPT THIS) - Similarities, differences, pros, and cons of the following Linux commands: 1. whatis ls AND 2. man -f ls
+ man -k ls
+ man -w ls
+
+https://chatgpt.com/c/68fa7be7-e0c4-8321-8cb9-e082e4966117

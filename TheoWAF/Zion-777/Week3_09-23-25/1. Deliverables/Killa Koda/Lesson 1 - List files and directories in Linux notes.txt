@@ -1,0 +1,97 @@
+1. First look on ls command
+---------------------------
+ ls
+ ls --color=no
+ ls --color=yes
+ ls --color=auto
+
+https://chatgpt.com/c/68ed4557-ab70-832b-a558-f7524a865be3
+
+2. Get more information
+-----------------------
+ clear
+ ls -l
+ ls -n
+
+https://chatgpt.com/c/68ed5186-b85c-832b-97c9-ada16e3fa74c
+
+3. List all files
+-----------------
+ ls -a
+ ls .
+ ls ..
+ ls -A
+ ls -al
+
+https://chatgpt.com/c/68efc82e-086c-8324-a178-16504ea05e95
+
+4. Sorting the files
+--------------------
+ (AI PROMPT THIS) - Time stamps within linux - 1. atime, 2. mtime, and 3. ctime
+ (AI PROMPT THIS) - What is Unix epoch within the context of numerically representing time inside of a Linux
+
+ date
+ date +%s
+ ls -lt
+ ls -ltu
+ ls -ltc
+
+ (AI PROMPT THIS) - Explain in detail what is going on with the following linux commands - 1. touch theNewestFile, 2. ls -ltu, 3. ls -ltc, 4. echo "hello world!" > file-02, 5. ls -ltu, 6. ls -ltc, 7. chmod 444 file-01 , 8. ls -ltu, and 9. ls -ltc
+
+https://chatgpt.com/c/68efd751-d9e0-832f-89c0-ebe916c2fba2
+
+5. Sort by size
+---------------
+ 
+ ls -s
+ ls -ls
+
+ (AI PROMPT THIS) - Difference between the terminal output for ls -l and ls -ls
+
+ ls -lS
+
+ (AI PROMPT THIS) - Linux commands are case sensitive
+
+ ls -lh
+
+ (AI PROMPT THIS) - The h argument in the command ls -lh using the power of 1024 when displaying the size of a file and/or directory within a file system
+
+ ls -l --si
+
+ (AI PROMPT THIS) - The Linux command ls -l --si using the power of 1000 when displaying the size of a file and/or directory within a file system
+
+ ls -lSh
+
+https://chatgpt.com/c/68f6928b-f8b0-8330-ba11-f16a8bac9c38
+
+6. Formatting
+-------------
+ 
+ ls -1
+
+ (AI PROMPT THIS) - When it comes to the ls -1 Linux command, why is it not necessary to add the -l flag to this command (e.g., ls -1l)
+
+ ls --format=commas AND ls -m
+ ls --format=long AND ls -l
+ ls -lQ
+ ls -l --time-style=locale
+ ls -l --time-style=iso
+ ls -l --time-style=full-iso
+
+ (AI PROMPT THIS) - Compare and contrast the terminal output of the following Linux commands: 1. ls -l, 2. ls -l --time-style=locale, 3. ls -l --time-style=iso, 4. ls -l --time-style=full-iso, 5. ls -l --time-style=long-iso, 6. ls -l --time-style=+FORMAT, AND 7. ls -l --time-style=posix-STYLE
+
+https://chatgpt.com/c/68f7b1f4-4da0-832e-9712-9369d616c305
+
+7. Other options and help
+-------------------------
+ 
+ ls -al --author
+ ls -ald
+ ls -ali
+ ls -alR
+ ls -alr
+ ls -alSr
+ ls --version
+ ls --help
+
+https://chatgpt.com/c/68f91238-c4c4-8333-9038-461926300823
